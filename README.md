@@ -5,14 +5,17 @@
 
 ## Установка
 
-1. Скачайте [DCCommander.zip](https://github.com/Lirothi/DCCommander-releases/releases/latest/download/DCCommander.zip) — это всегда последняя версия.
-2. Распакуйте в отдельную папку, например `%LOCALAPPDATA%\Programs\DCCommander`
-   (не в `Program Files`: туда без прав администратора обновление не запишется).
-3. Запустите `DCCommander.exe`. Файл не подписан, поэтому при первом запуске Windows SmartScreen
-   может предупредить: «Подробнее» → «Выполнить в любом случае».
+1. Скачайте [DCCommander.exe](https://github.com/Lirothi/DCCommander-releases/releases/latest/download/DCCommander.exe) — это всегда последняя версия, один файл.
+2. Запустите его. Файл не подписан, поэтому Windows SmartScreen может предупредить:
+   «Подробнее» → «Выполнить в любом случае».
+3. Программа предложит установиться: в `%LOCALAPPDATA%\Programs\DCCommander`, с ярлыком в
+   меню «Пуск». После этого скачанный файл можно удалить. Если нажать «Запускать отсюда»,
+   программа останется там, где лежит, и обновляться будет там же (только не в `Program
+   Files`: туда без прав администратора обновление не запишется).
 
-При старте программа просит права администратора, чтобы читать любые папки. Это
-отключается в Настройках: «Запускать от имени администратора».
+Права администратора не нужны. Если хочется читать любые папки (в том числе чужие и
+системные), включите в Настройках «Запускать от имени администратора»: тогда Windows
+будет спрашивать при каждом старте.
 
 ## Обновления
 
@@ -28,13 +31,14 @@
 A dual-pane file manager for Windows 10/11 (x64). This repository holds the builds only;
 the program updates itself from here.
 
-1. Download [DCCommander.zip](https://github.com/Lirothi/DCCommander-releases/releases/latest/download/DCCommander.zip) (always the latest version).
-2. Unpack it into a folder of its own, e.g. `%LOCALAPPDATA%\Programs\DCCommander`
-   (not `Program Files`: an update could not be written there without administrator rights).
-3. Run `DCCommander.exe`. It is not signed, so Windows SmartScreen may warn on the first
-   start: "More info" → "Run anyway".
+1. Download [DCCommander.exe](https://github.com/Lirothi/DCCommander-releases/releases/latest/download/DCCommander.exe) (always the latest version, one file).
+2. Run it. It is not signed, so Windows SmartScreen may warn: "More info" → "Run anyway".
+3. It offers to install itself into `%LOCALAPPDATA%\Programs\DCCommander` with a Start menu
+   shortcut; the downloaded file can go afterwards. "Run from here" keeps it where it is,
+   and it updates there (not in `Program Files`: an update could not be written there
+   without administrator rights).
 
-It asks for administrator rights at start, to read any folder; Settings: "Run as
-administrator" turns that off. New versions show up as a button in the title bar; the
-update restarts the program and keeps the tabs and settings, and the previous version
-can be brought back in Settings → Updates.
+It needs no administrator rights; Settings: "Run as administrator" makes it read any
+folder (Windows then asks at every start). New versions show up as a button in the title
+bar; the update restarts the program and keeps the tabs and settings, and the previous
+version can be brought back in Settings → Updates.
